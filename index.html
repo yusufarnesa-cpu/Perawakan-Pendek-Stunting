@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Study Companion · Perawakan Pendek &amp; Stunting</title>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--tx:#1b2430;--mu:#5b6776;--ac:#0f766e;--ac2:#e6f4f2;--bd:#dde3ea;--ok:#15803d;--bad:#b91c1c;--wa:#b45309;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e141b;--card:#161e28;--tx:#e6ebf1;--mu:#9aa6b4;--ac:#2dd4bf;--ac2:#13302f;--bd:#27323f;--ok:#4ade80;--bad:#f87171;--wa:#fbbf24;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e141b;--card:#161e28;--tx:#e6ebf1;--mu:#9aa6b4;--ac:#2dd4bf;--ac2:#13302f;--bd:#27323f;--ok:#4ade80;--bad:#f87171;--wa:#fbbf24;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--card);border-bottom:1px solid var(--bd)}
+.bar{height:4px;background:var(--bd)}.bar i{display:block;height:100%;width:0;background:var(--ac)}
+.top{display:flex;gap:8px;align-items:center;padding:8px 14px;flex-wrap:wrap}
+.top b{color:var(--ac)}.top input{flex:1;min-width:140px;padding:7px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
+button{cursor:pointer;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:8px;padding:7px 11px;font:inherit}
+nav{display:flex;gap:6px;overflow-x:auto;padding:0 14px 8px}nav a{white-space:nowrap;font-size:13px;color:var(--mu);text-decoration:none;padding:3px 10px;border:1px solid var(--bd);border-radius:99px}
+nav a:hover{color:var(--ac);border-color:var(--ac)}
+main{max-width:900px;margin:0 auto;padding:16px 14px 60px}
+.hero{background:linear-gradient(135deg,var(--ac2),var(--card));border:1px solid var(--bd);border-radius:14px;padding:22px;margin-bottom:16px}
+.hero h1{margin:0 0 6px;font-size:26px}.hero p{margin:4px 0;color:var(--mu)}
+details{background:var(--card);border:1px solid var(--bd);border-radius:12px;margin:12px 0}
+summary{cursor:pointer;padding:12px 16px;font-weight:650;font-size:17px;list-style:none}summary::before{content:"▸ ";color:var(--ac)}details[open]>summary::before{content:"▾ "}
+.in{padding:0 16px 14px}.in h4{margin:14px 0 4px;color:var(--ac)}ul{margin:4px 0;padding-left:20px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--bd);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--ac2)}
+.w{overflow-x:auto}
+.t{display:inline-block;font-size:12px;font-weight:700;padding:1px 8px;border-radius:6px;background:var(--ac2);color:var(--ac);margin-right:4px}
+.t.r{color:var(--bad)}.t.y{color:var(--wa)}
+.box{border-left:4px solid var(--ac);background:var(--ac2);padding:8px 12px;border-radius:6px;margin:8px 0}
+.box.r{border-color:var(--bad)}.box.y{border-color:var(--wa)}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0}.flow span{border:1px solid var(--ac);border-radius:8px;padding:4px 9px;font-size:14px;background:var(--card)}.flow em{color:var(--ac);font-style:normal}
+.hide{display:none}
+.qc{border:1px solid var(--bd);border-radius:10px;padding:12px;margin:12px 0;background:var(--bg)}
+.op{display:block;width:100%;text-align:left;margin:6px 0}.op.ok{border-color:var(--ok);background:var(--ac2)}.op.no{border-color:var(--bad)}
+.ex{margin-top:8px;font-size:14.5px}
+.sc{font-weight:700;color:var(--ac)}
+label{display:block;margin:3px 0}
+</style>
+</head>
+<body>
+<header>
+<div class="bar"><i id="pg"></i></div>
+<div class="top"><b>🩺 Study Companion</b><input id="q" type="search" placeholder="Cari istilah… (mis. CDGP, PMT, TPG)"><button id="th">🌓</button></div>
+<nav><a href="#tujuan">Tujuan</a><a href="#prioritas">Prioritas</a><a href="#skdi">SKDI</a><a href="#teori1">Perawakan Pendek</a><a href="#teori2">Stunting</a><a href="#tabel">Tabel</a><a href="#alur">Algoritma</a><a href="#jebakan">Jebakan</a><a href="#mnemonik">Mnemonik</a><a href="#kuis">Kuis</a><a href="#kilat">5 Menit</a></nav>
+</header>
+<main>
+<div class="hero"><h1>Perawakan Pendek &amp; Stunting</h1><p>Blok Endokrin · Sistem Endokrin, Metabolik, dan Nutrisi</p><p>Tatalaksana awal &amp; rujuk · Progres belajar: <span class="sc" id="prog">0%</span></p></div>
+
+<details id="tujuan" open><summary>🎯 Tujuan Pembelajaran</summary><div class="in">
+<label><input type="checkbox" class="ck"> Menyebutkan definisi perawakan pendek dan stunting</label>
+<label><input type="checkbox" class="ck"> Menghitung mid-parental height dan tinggi potensi genetik (TPG)</label>
+<label><input type="checkbox" class="ck"> Membedakan familial short stature, CDGP, dan penyebab patologis</label>
+<label><input type="checkbox" class="ck"> Menyusun pendekatan diagnosis dan membaca kurva pertumbuhan</label>
+<label><input type="checkbox" class="ck"> Menjelaskan alur pencegahan, tatalaksana awal, dan rujukan stunting</label>
+</div></details>
+
+<details id="prioritas" open><summary>📌 Prioritas Belajar</summary><div class="in">
+<p><span class="t r">🔥 HIGH YIELD</span> Definisi (&lt;P3 / −2 SD), rumus TPG, beda FSS vs CDGP, algoritma diagnosis, usia berat–usia tinggi, alur rujuk stunting.</p>
+<p><span class="t">🧠 MUST MEMORIZE</span> Kecepatan tumbuh normal per usia, frekuensi pengukuran antropometri, kenaikan berat badan minimal per usia.</p>
+<p><span class="t y">⚠️ COMMON TRAPS</span> Rumus TPG laki-laki vs perempuan, usia tulang pada FSS vs CDGP.</p>
+<p><span class="t">📎 PELENGKAP</span> Data prevalensi, lima pilar program pemerintah, dampak jangka panjang.</p>
+</div></details>
+
+<details id="skdi" open><summary>🏷️ Pemetaan SKDI</summary><div class="in">
+<p>Materi ini berada pada capaian pembelajaran SKD 2026 sistem endokrin, metabolik, dan nutrisi dengan fokus <b>tatalaksana awal dan rujuk</b> untuk perawakan pendek dan stunting. Artinya: kuasai deteksi, penapisan, intervensi awal di layanan primer, dan kapan harus merujuk, bukan tatalaksana lanjutan oleh spesialis.</p>
+</div></details>
+
+<details id="teori1" open><summary>📖 Core Theory 1 — Perawakan Pendek</summary><div class="in">
+<h4>1. Definisi &amp; Epidemiologi</h4>
+<p>Tinggi badan <b>&lt;P3 atau −2 SD</b> kurva yang sesuai usia dan jenis kelamin. Gunakan kurva WHO untuk usia 0–5 tahun dan CDC untuk anak lebih besar. CDGP lebih sering pada anak laki-laki.</p>
+<h4>2. Etiologi</h4>
+<p><b>Varian normal:</b> perawakan pendek familial, CDGP.<br><b>Patologis proporsional:</b> hormonal (BB/TB meningkat: defisiensi GH, hipotiroid, Cushing, hipoparatiroid); non-hormonal (BB/TB menurun: malnutrisi, penyakit kronis, psikososial dwarfism, IUGR).<br><b>Disproporsional:</b> displasia skeletal (akondroplasia, hipokondroplasia), rickets, osteogenesis imperfecta.<br><b>Dismorfik:</b> Turner, Prader-Willi, Noonan, Russell-Silver, Down; kelainan metabolik bawaan seperti MPS.</p>
+<h4>3. Patofisiologi</h4>
+<div class="flow"><span>Gangguan faktor genetik / hormon / nutrisi / skeletal</span><em>→</em><span>Kecepatan tumbuh terganggu</span><em>→</em><span>TB &lt;−2 SD</span></div>
+<p>Pertumbuhan normal melewati empat fase: intrauterin, bayi, anak, pubertas. Pertumbuhan terhambat bila salah satu fase terganggu.</p>
+<h4>4. Manifestasi Klinik</h4>
+<ul><li>Tinggi di bawah P3 dengan atau tanpa kecepatan tumbuh melambat (&lt;P25).</li><li>Petunjuk penyebab: poliuria-polidipsia (DI, RTA), obesitas sentral-striae (Cushing), kulit kering-bradikardia-goiter (hipotiroid), frontal bossing-mikropenis (defisiensi GH), webbed neck-cubitus valgus (Turner).</li></ul>
+<h4>5. Diagnosis</h4>
+<ul><li><b>Anamnesis:</b> TB orang tua, usia pubertas orang tua, riwayat keluarga, perinatal, pubertas, nutrisi, penyakit kronis.</li><li><b>Fisik:</b> rasio segmen atas:bawah, palpasi tiroid, status maturasi pubertas (Tanner), neurologis.</li><li><b>Kriteria awal:</b> TB &lt;P3, kecepatan tumbuh &lt;P25, perkiraan tinggi akhir di bawah TPG.</li><li><b>Penunjang:</b> usia tulang (bone age) dan sesuai indikasi.</li></ul>
+<div class="box"><b>Rumus TPG</b><br>Laki-laki: (TB ayah + TB ibu + 13) / 2<br>Perempuan: (TB ayah − 13 + TB ibu) / 2<br>Rentang TPG = mid-parental height ± 8,5 cm</div>
+<div class="box y"><b>Segmen tubuh:</b> segmen bawah = simfisis pubis ke telapak kaki; segmen atas = TB − segmen bawah. Rasio proporsional: lahir 1,7; usia 8–10 tahun 1,0.</div>
+<h4>6. Tatalaksana</h4>
+<ul><li>Pengukuran antropometri berkala: 0–12 bulan tiap 1 bulan; 12 bulan–3 tahun tiap 3 bulan; 3–6 tahun tiap 6 bulan; 6–18 tahun tiap 1 tahun.</li><li>Ploting dan interpretasi pola pertumbuhan setelah pengukuran.</li><li>Perawakan pendek variasi normal <b>tidak memerlukan terapi</b>; penyebab patologis ditangani sesuai etiologi.</li></ul>
+</div></details>
+
+<details id="teori2" open><summary>📖 Core Theory 2 — Stunting</summary><div class="in">
+<h4>1. Definisi &amp; Epidemiologi</h4>
+<p>Gagal tumbuh pada balita akibat kekurangan gizi kronis sehingga terlalu pendek untuk usianya. Kriteria: <b>PB/U atau TB/U &lt;−2 SD</b> menurut standar WHO 2006.</p>
+<p>SSGI 2024: prevalensi nasional <b>19,8%</b> (sekitar 4,48 juta balita), turun 1,7 poin dari 2023. Indonesia peringkat ke-2 tertinggi di Asia Tenggara. Provinsi tertinggi: Papua Pegunungan (40,0%), NTT (37,0%); terendah: Bali (8,7%).</p>
+<h4>2. Etiologi &amp; Faktor Risiko</h4>
+<p>Empat faktor langsung: <b>keluarga dan rumah tangga, ASI, MPASI, infeksi</b>. Prenatal: IUGR, infeksi, teratogen, sindrom, kelainan kromosom. Pascanatal: malnutrisi dan penyakit kronis (gastrointestinal, kardiopulmonal, infeksi, ginjal, hematologi, endokrin).</p>
+<h4>3. Patofisiologi</h4>
+<div class="flow"><span>Kenaikan BB tidak adekuat (weight faltering)</span><em>→</em><span>Tidak ditatalaksana optimal</span><em>→</em><span>Laju pertumbuhan linier melambat</span><em>→</em><span>Stunting (malnutrisi kronik)</span></div>
+<p>Periode 1.000 Hari Pertama Kehidupan adalah jendela pencegahan. Setelah 2 tahun, catch-up linier mungkin terjadi tetapi perbaikan kognitif dan imun belum jelas.</p>
+<h4>4. Manifestasi Klinik</h4>
+<p>Keluhan utama: anak lebih pendek dibanding sebayanya. Waspadai tanda bahaya: dugaan penyakit jantung bawaan, keterlambatan perkembangan, tampilan dismorfik, gagal tumbuh meski asupan kalori adekuat, organomegali atau limfadenopati, infeksi berat atau berulang, muntah-diare-dehidrasi berulang.</p>
+<h4>5. Diagnosis</h4>
+<ul><li><b>Anamnesis:</b> faktor ibu (prakonsepsi, kehamilan, laktasi, PJT, prematur), faktor anak (ASI-MPASI, imunisasi, perkembangan, infeksi berulang: HIV, sifilis, diare, TB, ISPA), faktor lingkungan.</li><li><b>Antropometri:</b> BB/U, PB/U atau TB/U, BB/TB, lingkar kepala, IMT/U, length dan weight increment, rasio segmen, TPG.</li><li><b>Penunjang sesuai indikasi:</b> TSH (hipotiroid kongenital), TCM dan skoring TB, serologi atau virologi HIV, eksplorasi alergi susu sapi, eksplorasi IEM, bone age.</li><li><b>Pembeda stunting vs penyebab lain:</b> proporsional dengan usia berat ≤ usia tinggi ≤ usia kronologis = stunting.</li></ul>
+<h4>6. Tatalaksana &amp; Pencegahan</h4>
+<ul><li>Posyandu timbang dan ukur; weight faltering terdeteksi di KMS (BB tidak naik atau tidak mengikuti garis).</li><li>BB dan PB baik: PMT penyuluhan dengan protein hewani sesuai usia.</li><li>Weight faltering, BB kurang, atau gizi kurang: rujuk puskesmas, evaluasi red flags, beri PDK; bila BB tidak naik adekuat dalam 1 minggu rujuk RSUD.</li><li>Gizi buruk: rujuk puskesmas dan beri F75/F100 serta mineral mix bila tersedia.</li><li>Stunting: rujuk puskesmas untuk konfirmasi, lalu RSUD untuk evaluasi stunting vs non-stunting, red flags, dan pemberian PKMK. BBLR dan prematur juga ke jalur RSUD.</li></ul>
+<h4>7. Komplikasi &amp; Prognosis</h4>
+<p>Dampak jangka panjang: bersifat <b>irreversible</b>, mortalitas infeksi meningkat (diare, ISPA, campak), gangguan perkembangan otak (kognitif, prestasi sekolah, daya tahan, kapasitas kerja). Pada dewasa: perawakan pendek, stamina rendah, pendapatan rendah; pada kondisi sosioekonomi baik berisiko adiposita sentral, hipertensi, diabetes, penyakit kardiovaskular.</p>
+</div></details>
+
+<details id="tabel" open><summary>📊 Tabel Penting</summary><div class="in">
+<h4>Kecepatan pertumbuhan normal</h4>
+<div class="w"><table><tr><th>Usia</th><th>cm/tahun</th></tr><tr><td>Intrauterin</td><td>60–100</td></tr><tr><td>0–12 bulan</td><td>23–27</td></tr><tr><td>1–2 tahun</td><td>10–14</td></tr><tr><td>2–5 tahun</td><td>6–7</td></tr><tr><td>Prapubertas</td><td>5–5,5</td></tr><tr><td>Pubertas</td><td>Perempuan 8–12; laki-laki 10–14</td></tr></table></div>
+<h4>Kenaikan minimal (weight faltering bila di bawahnya)</h4>
+<div class="w"><table><tr><th>Usia</th><th>BB per bulan</th><th>PB per bulan</th></tr><tr><td>0–3 bln</td><td>750 g</td><td>3,5 cm</td></tr><tr><td>3–6 bln</td><td>600 g</td><td>2,0 cm</td></tr><tr><td>6–9 bln</td><td>450 g</td><td>1,5 cm</td></tr><tr><td>9–12 bln</td><td>360 g</td><td>1,2 cm</td></tr><tr><td>1–3 th</td><td>240 g</td><td>1,0 cm</td></tr><tr><td>4–6 th</td><td>180 g</td><td>3 cm/tahun</td></tr></table></div>
+<h4>PMT penyuluhan vs pemulihan</h4>
+<div class="w"><table><tr><th></th><th>Penyuluhan</th><th>Pemulihan</th></tr><tr><td>Tujuan</td><td>Edukasi pemberian makan</td><td>Memperbaiki status gizi</td></tr><tr><td>Sasaran</td><td>Balita 6–59 bulan tanpa gangguan gizi</td><td>BB tidak naik, BB kurang, gizi kurang</td></tr><tr><td>Frekuensi</td><td>1× sebulan, hari Posyandu</td><td>Setiap hari</td></tr><tr><td>Penyelenggara</td><td>Kader Posyandu</td><td>Puskesmas, pemda, mitra</td></tr></table></div>
+</div></details>
+
+<details id="alur" open><summary>🧭 Algoritma Diagnosis &amp; Rujuk</summary><div class="in">
+<h4>Perawakan pendek</h4>
+<div class="flow"><span>Perawakan pendek</span><em>→</em><span>Kecepatan tumbuh?</span></div>
+<div class="flow"><span>Normal → varian normal (FSS / CDGP)</span></div>
+<div class="flow"><span>Tidak normal → proporsional (BB/TB naik: endokrin; BB/TB turun: nutrisi)</span></div>
+<div class="flow"><span>Tidak normal → disproporsional (skeletal) atau dismorfik (kromosom, sindrom)</span></div>
+<h4>Stunting di Posyandu</h4>
+<div class="flow"><span>Timbang &amp; ukur</span><em>→</em><span>BB-PB baik: PMT</span></div>
+<div class="flow"><span>Weight faltering / BB kurang / gizi kurang</span><em>→</em><span>Puskesmas: red flags + PDK</span><em>→</em><span>BB tak naik 1 minggu → RSUD</span></div>
+<div class="flow"><span>Stunting</span><em>→</em><span>Puskesmas: konfirmasi</span><em>→</em><span>RSUD: evaluasi + PKMK</span></div>
+</div></details>
+
+<details id="banding" open><summary>⚖️ Diagnosis Banding</summary><div class="in"><div class="w"><table>
+<tr><th></th><th>Familial short stature</th><th>CDGP</th><th>Patologis</th></tr>
+<tr><td>Usia tulang</td><td>= usia kronologis</td><td>&lt; usia kronologis</td><td>Bervariasi sesuai penyebab</td></tr>
+<tr><td>Tinggi dewasa</td><td>&lt;P3, sesuai genetik</td><td>&gt;P3, sesuai genetik</td><td>Di bawah potensi genetik</td></tr>
+<tr><td>Kecepatan tumbuh</td><td>Normal, di bawah P3 sejajar kurva</td><td>Melambat 3 tahun pertama, spurt pubertas terlambat</td><td>Melambat (&lt;P25)</td></tr>
+<tr><td>Riwayat keluarga</td><td>Orang tua pendek</td><td>60–90% ada, menarche ibu atau spurt ayah terlambat</td><td>Tidak khas</td></tr>
+<tr><td>Terapi</td><td>Tidak perlu</td><td>Tidak perlu</td><td>Sesuai etiologi</td></tr></table></div></div></details>
+
+<details id="jebakan" open><summary>⚠️ Common Traps &amp; Frequently Asked</summary><div class="in">
+<div class="box y">Tukar rumus TPG: laki-laki ditambah 13 cm pada ibu; perempuan dikurangi 13 cm pada ayah.</div>
+<div class="box y">Usia tulang CDGP lebih muda dari usia kronologis; usia tulang FSS sama dengan usia kronologis.</div>
+<div class="box y">Stunting bukan sekadar pendek: syaratnya proporsional dengan usia berat ≤ usia tinggi ≤ usia kronologis. Jika usia tinggi &lt; usia berat, cari penyebab lain.</div>
+<div class="box y">Definisi stunting memakai PB/U atau TB/U, bukan BB/TB. BB/TB dipakai untuk menilai wasting dan gizi.</div>
+<div class="box">❓ Sering ditanya: hitung TPG, beda FSS vs CDGP, usia berat-tinggi, langkah awal weight faltering, jalur rujuk stunting.</div>
+</div></details>
+
+<details id="mnemonik" open><summary>🧩 Mnemonik</summary><div class="in">
+<p><b>4 faktor langsung stunting: K-A-M-I</b> → <b>K</b>eluarga, <b>A</b>SI, <b>M</b>PASI, <b>I</b>nfeksi.</p>
+<p><b>Segmen tubuh:</b> bawah = simfisis → kaki; atas = TB − bawah. Rasio lahir 1,7 turun menjadi 1 di usia 8–10 tahun.</p>
+<p><b>FSS vs CDGP:</b> FSS = tulang <u>sama</u>, dewasa pendek. CDGP = tulang <u>muda</u>, dewasa normal (menyusul).</p>
+</div></details>
+
+<details id="kuis" open><summary>📝 Latihan Soal Klinis</summary><div class="in">
+<p>Skor: <span class="sc" id="sk">0/0</span> <button id="rs">Ulangi</button></p><div id="qs"></div></div></details>
+
+<details id="kilat" open><summary>⚡ Jika Hanya Punya 5 Menit</summary><div class="in"><ul>
+<li>Perawakan pendek: TB &lt;P3 atau −2 SD. Stunting: PB/U atau TB/U &lt;−2 SD (WHO 2006).</li>
+<li>TPG laki-laki = (ayah + ibu + 13)/2; perempuan = (ayah − 13 + ibu)/2; rentang ± 8,5 cm.</li>
+<li>FSS: tulang normal, dewasa &lt;P3. CDGP: tulang lebih muda, dewasa &gt;P3, riwayat keluarga.</li>
+<li>Stunting = usia berat ≤ usia tinggi ≤ usia kronologis, proporsional.</li>
+<li>Weight faltering → puskesmas, red flags, PDK; stunting terkonfirmasi → RSUD, PKMK.</li>
+<li>Dampak stunting irreversible: infeksi, kognitif, produktivitas.</li></ul></div></details>
+</main>
+<script>
+const Q=[
+{q:"Anak laki-laki 9 tahun, TB di bawah P3 dengan kecepatan tumbuh normal. Usia tulang lebih muda dari usia kronologis, ayah mengalami pubertas terlambat, dan perkiraan tinggi dewasa di atas P3. Diagnosis paling mungkin?",
+o:["Familial short stature","Delay konstitusional (CDGP)","Defisiensi hormon pertumbuhan","Hipotiroid didapat kronis","Sindrom Turner mosaik"],a:1,
+e:"Clue: usia tulang &lt; kronologis, riwayat keluarga pubertas terlambat, tinggi dewasa &gt;P3. Interpretasi: pertumbuhan tertunda tetapi akan menyusul. Kesimpulan: CDGP.",
+w:"FSS memiliki usia tulang sama dengan usia kronologis dan tinggi dewasa &lt;P3. Defisiensi GH dan hipotiroid disertai kecepatan tumbuh melambat dan tanda klinis khas. Turner terjadi pada perempuan.",
+p:"Tulang muda + tinggi dewasa normal = CDGP."},
+{q:"Anak perempuan dengan tinggi ayah 165 cm dan tinggi ibu 158 cm. Berapa rentang tinggi potensi genetik (TPG) anak tersebut?",
+o:["151,5–168,5 cm","153,0–170,0 cm","148,5–165,5 cm","146,5–163,5 cm","159,5–176,5 cm"],a:3,
+e:"Perempuan: (165 − 13 + 158)/2 = 155 cm. Rentang = 155 ± 8,5 = 146,5–163,5 cm.",
+w:"Rentang 159,5–176,5 cm dihasilkan bila memakai rumus laki-laki (mid-parental 168 cm). Pilihan lain tidak berasal dari rumus yang benar.",
+p:"Perempuan: kurangi 13 cm pada ayah. Laki-laki: tambah 13 cm pada ibu."},
+{q:"Balita dengan PB/U −2,6 SD tampak proporsional. Hasil plotting menunjukkan usia tinggi lebih rendah dari usia berat dan usia berat lebih rendah dari usia kronologis. Interpretasi yang tepat?",
+o:["Stunting akibat gizi kronis","Gizi buruk dengan wasting","Pendek karena penyebab lain","Perawakan pendek familial","Balita normal tanpa kelainan"],a:2,
+e:"Kriteria stunting: usia berat ≤ usia tinggi ≤ usia kronologis. Pada kasus usia tinggi &lt; usia berat, sehingga bukan pola stunting. Kesimpulan: pendek penyebab lain yang perlu dicari.",
+w:"Stunting membutuhkan pola usia berat ≤ usia tinggi. Wasting dinilai dengan BB/TB. FSS ditegakkan dengan riwayat keluarga dan usia tulang. Anak ini jelas pendek (−2,6 SD).",
+p:"Usia berat ≤ usia tinggi ≤ usia kronologis = stunting."},
+{q:"Bayi 8 bulan di Posyandu: berat badan tidak naik dua kali penimbangan berturut-turut, tanpa tanda gizi buruk. Langkah paling tepat?",
+o:["Beri edukasi dan PMT penyuluhan saja","Rujuk langsung ke dokter spesialis anak","Rujuk puskesmas untuk red flags dan PDK","Beri F75 dan mineral mix di Posyandu","Pantau ulang tanpa intervensi tambahan"],a:2,
+e:"Clue: BB tidak naik berarti weight faltering. Algoritme: rujuk puskesmas, evaluasi red flags, lalu beri PDK. Kesimpulan: pilihan puskesmas.",
+w:"PMT penyuluhan untuk anak tanpa gangguan gizi. F75 untuk gizi buruk. Rujuk RSUD baru dilakukan bila BB tidak naik adekuat dalam 1 minggu. Memantau tanpa intervensi menunda penanganan.",
+p:"Weight faltering → puskesmas → red flags + PDK."},
+{q:"Anak 2 tahun terkonfirmasi stunting di puskesmas. Tindak lanjut yang sesuai alur tatalaksana?",
+o:["Lanjutkan PMT penyuluhan di Posyandu","Beri F100 di puskesmas selama 2 minggu","Cukup edukasi pola makan kepada orang tua","Ulangi pengukuran setiap tahun tanpa rujukan","Rujuk RSUD untuk evaluasi dan PKMK"],a:4,
+e:"Alur: stunting dikonfirmasi puskesmas lalu dirujuk ke RSUD untuk evaluasi stunting vs non-stunting, red flags, dan pemberian PKMK.",
+w:"PMT penyuluhan dan edukasi saja tidak memadai untuk stunting. F100 dipakai pada gizi buruk. Pemantauan tahunan terlalu jarang untuk balita.",
+p:"Stunting terkonfirmasi = RSUD + PKMK."},
+{q:"Seorang anak berusia 2 tahun perlu dipantau pertumbuhannya secara berkala. Berapa frekuensi pengukuran antropometri yang dianjurkan?",
+o:["Setiap 1 bulan","Setiap 3 bulan","Setiap 6 bulan","Setiap 1 tahun","Setiap 2 minggu"],a:1,
+e:"Jadwal: lahir–12 bulan tiap 1 bulan; 12 bulan–3 tahun tiap 3 bulan; 3–6 tahun tiap 6 bulan; 6–18 tahun tiap 1 tahun.",
+w:"Tiap 1 bulan untuk bayi sampai 12 bulan. Tiap 6 bulan untuk usia 3–6 tahun. Tiap 1 tahun untuk usia 6–18 tahun. Tiap 2 minggu tidak ada dalam jadwal.",
+p:"Hafalkan 1 bulan – 3 bulan – 6 bulan – 1 tahun."}];
+const $=s=>document.querySelector(s);let ok=0,done=0;
+function build(){ok=0;done=0;$("#sk").textContent="0/0";$("#qs").innerHTML=Q.map((x,i)=>`<div class="qc" data-i="${i}"><b>${i+1}. ${x.q}</b>${x.o.map((t,j)=>`<button class="op" data-j="${j}">${"ABCDE"[j]}. ${t}</button>`).join("")}<div class="ex hide"></div></div>`).join("")}
+$("#qs").addEventListener("click",e=>{const b=e.target.closest(".op");if(!b)return;const c=b.closest(".qc");if(c.dataset.d)return;c.dataset.d=1;const x=Q[c.dataset.i],j=+b.dataset.j;done++;if(j===x.a)ok++;
+c.querySelectorAll(".op").forEach((o,k)=>{if(k===x.a)o.classList.add("ok");else if(k===j)o.classList.add("no")});
+const ex=c.querySelector(".ex");ex.classList.remove("hide");ex.innerHTML=`<p>✅ <b>Jawaban benar:</b> ${"ABCDE"[x.a]}</p><p>🧠 ${x.e}</p><p>❌ ${x.w}</p><p>💡 <b>Exam pearl:</b> ${x.p}</p>`;$("#sk").textContent=ok+"/"+done});
+$("#rs").onclick=build;build();
+const r=document.documentElement;$("#th").onclick=()=>{const d=getComputedStyle(r).colorScheme.includes("dark");r.setAttribute("data-theme",d?"light":"dark")};
+function prog(){const h=document.documentElement;const p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1)*100;$("#pg").style.width=p+"%"}
+addEventListener("scroll",prog);
+const cks=[...document.querySelectorAll(".ck")];cks.forEach(c=>c.onchange=()=>{$("#prog").textContent=Math.round(cks.filter(k=>k.checked).length/cks.length*100)+"%"});
+$("#q").addEventListener("input",e=>{const v=e.target.value.trim().toLowerCase();document.querySelectorAll("main details").forEach(d=>{const m=!v||d.textContent.toLowerCase().includes(v);d.classList.toggle("hide",!m);if(v&&m)d.open=true})});
+</script>
+</body>
+</html>
